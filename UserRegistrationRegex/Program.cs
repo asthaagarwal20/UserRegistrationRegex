@@ -12,8 +12,11 @@ namespace UserRegistrationRegex
         {
             Pattern pattern = new Pattern();
             Console.WriteLine("Enter the FirstName");
-            string firstName=Console.ReadLine();
-            pattern.validate(firstName);
+            string firstName = Console.ReadLine();
+            pattern.validateFirstName(firstName);
+            Console.WriteLine("Enter the LastName");
+            string lastName = Console.ReadLine();
+            pattern.validateLastName(lastName);
         }
     }
 }
