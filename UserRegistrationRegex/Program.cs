@@ -17,6 +17,9 @@ namespace UserRegistrationRegex
             Console.WriteLine("Enter the LastName");
             string lastName = Console.ReadLine();
             pattern.validateLastName(lastName);
+            Console.WriteLine("Enter the MobileNo");
+            string mobileNo = Console.ReadLine();
+            pattern.validateMobileNo(mobileNo);
         }
     }
 }
