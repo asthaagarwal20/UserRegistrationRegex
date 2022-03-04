@@ -20,6 +20,9 @@ namespace UserRegistrationRegex
             Console.WriteLine("Enter the MobileNo");
             string mobileNo = Console.ReadLine();
             pattern.validateMobileNo(mobileNo);
+            Console.WriteLine("Enter the Password");
+            string password = Console.ReadLine();
+            pattern.validatePassword(password);
         }
     }
 }
