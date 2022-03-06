@@ -7,43 +7,43 @@ using System.Threading.Tasks;
 
 namespace UserRegistrationRegex
 {
-    internal class Pattern
+    public class Pattern
     {
         public string FirstName = "^[A-Z]{1}[a-z]{2,}$";
         public string LastName = "^[A-Z]{1}[a-z]{2,}$";
         public string MobileNo = "^[0-9]{2}[ ]{1}[6-9]{1}[0-9]{9}$";
         public string Password = "^[a-zA-Z0-9!@#$%^&*-=+_]{8,}$";
-        public void validateFirstName(string firstName)
+        public string validateFirstName(string firstName)
         {
             bool correct=Regex.IsMatch(firstName, FirstName);
             if (correct)
-                Console.WriteLine("FirstName is correct");
+                return "FirstName is Valid";
             else
-                Console.WriteLine("FirstName is not correct");
+                return "FirstName is not Valid";
         }
-        public void validateLastName(string lastName)
+        public string validateLastName(string lastName)
         {
             bool correct = Regex.IsMatch(lastName, LastName);
             if (correct)
-                Console.WriteLine("LastName is correct");
+                return "LastName is Valid";
             else
-                Console.WriteLine("LastName is not correct");
+                return "LastName is not Valid";
         }
-        public void validateMobileNo(string mobileNo)
+        public string validateMobileNo(string mobileNo)
         {
             bool correct = Regex.IsMatch(mobileNo,MobileNo);
             if (correct)
-                Console.WriteLine("correct");
+                return "Mobile no is Valid";
             else
-                Console.WriteLine("not correct");
+                return "Mobile no is not Valid";
         }
-        public void validatePassword(string password)
+        public string validatePassword(string password)
         {
             bool correct = Regex.IsMatch(password, Password);
             if (correct)
-                Console.WriteLine("correct");
+                return "Password is Valid";
             else
-                Console.WriteLine("not correct");
+                return "Password is not Valid";
         }
     }
 }
