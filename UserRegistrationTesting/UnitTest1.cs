@@ -26,6 +26,16 @@ namespace UserRegistrationTesting
 
         }
         [TestMethod]
+        public void GivenWrongEmail_ShouldReturnInvalidEmail()
+        {
+            string expected = "Email is not Valid";
+            string email = "asthaagarwal203gmail.com";
+            Pattern pattern = new Pattern();
+            string actual = pattern.validateEmail(email);
+            Assert.AreEqual(expected, actual);
+
+        }
+        [TestMethod]
         public void GivenWrongMobileNo_ShouldReturnInvalidMobileNo()
         {
             string expected = "Mobile no is not Valid";
