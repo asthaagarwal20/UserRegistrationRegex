@@ -48,7 +48,7 @@ namespace UserRegistrationTesting
         public void GivenWrongPassword_ShouldReturnInvalidPassword()
         {
             string expected = "Password is not Valid";
-            string password = "31234567";
+            string password = "Asdfdndvndfnrg";
             Pattern pattern = new Pattern();
             string actual = pattern.validatePassword(password);
             Assert.AreEqual(expected, actual);
