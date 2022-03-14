@@ -29,7 +29,7 @@ namespace UserRegistrationTesting
         public void GivenWrongEmail_ShouldReturnInvalidEmail()
         {
             string expected = "Email is not Valid";
-            string email = "asthaagarwal20gmail.com";
+            string email = " abc@yahoo.com";
             Pattern pattern = new Pattern();
             string actual = pattern.validateEmail(email);
             Assert.AreEqual(expected, actual);

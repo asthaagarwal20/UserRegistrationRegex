@@ -11,7 +11,7 @@ namespace UserRegistrationRegex
     {
         public string FirstName = "^[A-Z]{1}[a-z]{2,}$";
         public string LastName = "^[A-Z]{1}[a-z]{2,}$";
-        public string Email= " ^[A - Z0 - 9a - z]{1,}([.#$^_-][A-Za-z0-9]+)?[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
+        public string Email= "^[A - Z0 - 9a - z]{1,}([.#$^_-][A-Za-z0-9]+)?[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
         public string MobileNo = "^[0-9]{2}[ ]{1}[6-9]{1}[0-9]{9}$";
         public string Password = "^(?=.*[A-Z])(?=.*[0-9])(?=.[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$";
         public string validateFirstName(string firstName)
